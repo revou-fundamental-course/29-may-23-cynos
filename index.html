@@ -4,9 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    
+    <nav>
+        <ul class="menu">
+            <li class="logo"><a href="#"><img src="img/61af164800e38c11efc60b6d_RevoU.svg" alt=""></a></li>
+            <li class="item active"><a href="#">Home</a></li>
+            <li class="item"><a href="profile.html">Our Profile</a></li>
+            <li class="item"><a href="#">Portofolio</a></li>
+            <li class="item"><a href="#">Message Us</a></li>
+            <li class="toggle"><a href="#">=</a></li>
+        </ul>
+    </nav>
+
+    <div class="container-section">
+        <div class="section-1">
+            <div class="welcome-text-1">
+                <p style="font-size: 30px;">Hi <span style="font-weight: bold;">....</span>, Welcome To Website <br></p>
+                <p style="font-size: 15px; letter-spacing: 1px;">ini adalah website latihan pertama</p>
+            </div>
+            <h1 class="welcome-text-2">
+                Ready to <br>find your new home
+            </h1>
+        </div>
+        <div class="section-2">
+            <img src="img/bernard-hermant-KqOLr8OiQLU-unsplash 1.svg" alt="">
+        </div>
+        <div class="section-3">
+            <h2>Our Headquarter</h2>
+            <div class="headquarter">
+                <div class="headquarter-item">
+                    <div class="headquarter-body">
+                        <img src="img/img_forest.jpg" alt="">
+                        <h3>Jakarta</h3>
+                    </div>
+                </div>
+                <div class="headquarter-item">
+                    <div class="headquarter-body">
+                        <img src="img/img_mountains.jpg" alt="">
+                        <h3>Bandung</h3>
+                    </div>
+                </div>
+                <div class="headquarter-item">
+                    <div class="headquarter-body">
+                        <img src="img/img_snow.jpg" alt="">
+                        <h3>Surabaya</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-4">
+            <h2>Message Us</h2>
+            <div class="container-message-us">
+                <div class="message-us">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="input_nama">Nama</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="input_nama" name="input_nama" placeholder="Your name..">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="input_tanggal_lahir">Tanggal Lahir</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" id="input_tanggal_lahir" name="input_tanggal_lahir">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="input_jenis_kelamin">Jenis Kelamin</label>
+                            </div>
+                            <div class="col-75">
+                                <select id="input_jenis_kelamin" name="input_jenis_kelamin">
+                                    <option value="">Pilih</option>
+                                    <option value="laki-laki">Laki-Laki</option>
+                                    <option value="perempuan">Perempuan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="input_pesan">Pesan</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea id="input_pesan" name="input_pesan" placeholder="Tulis Pesan.." style="height:200px"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <input type="submit" id="input_submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="message-us-box">
+                    <div class="result">
+                        <p>
+                            <b>Current Time :</b>
+                            <span id="current_time"></span>
+                        </p>
+                        <p>
+                            <b>Nama :</b>
+                            <span id="nama"></span>
+                        </p>
+                        <p>
+                            <b>Tanggal Lahir :</b>
+                            <span id="tanggal_lahir"></span>
+                        </p>
+                        <p>
+                            <b>Jenis Kelamin :</b>
+                            <span id="jenis_kelamin"></span>
+                        </p>
+                        <p>
+                            <b>Pesan :</b>
+                            <span id="pesan"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-5">
+            <span>Created By Setia Budi @ RevoU</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
+
 </html>
